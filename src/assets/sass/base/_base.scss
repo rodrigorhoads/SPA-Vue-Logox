@@ -1,0 +1,101 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;    
+    box-sizing: inherit;
+}
+
+html{
+    //essa e a definição de 1rem aqui
+    font-size: 62.5%;
+}
+
+body{
+  box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  //justify-content: flex-start;
+    min-height: 100vh;
+}
+//.container > div{
+//    display: inline-block !important;
+//}
+
+@media (min-width:600px) {
+.coluna-2-media{
+  flex-basis:$largura-coluna-2;
+  display: inline-block !important;
+}
+.coluna-3-media{
+  flex-basis:$largurra-coluna-3;
+  display: inline-block !important;
+}
+.coluna-4-media{
+  flex-basis: $largura-coluna-4;
+  display: inline-block !important;
+}
+.coluna-5-media{
+  flex-basis: $largura-coluna-5;
+  display: inline-block !important;
+}
+.coluna-6-media{
+  flex-basis: $largura-coluna-6;
+  display: inline-block !important;
+}
+
+.coluna-8-media{
+  flex-basis: $largura-coluna-8;
+  display: inline-block !important;
+}
+.coluna-10-media{
+  flex-basis:$largura-coluna-10;
+}
+.coluna-12-media{
+  flex-basis:$largura-coluna-12;
+}
+}
+
+@media(max-width:600px){
+  .coluna-2-media{
+    flex-basis:$largura-coluna-12;
+    display: inline-block !important;
+  }
+  .coluna-3-media{
+    flex-basis:$largura-coluna-12;
+    display: inline-block !important;
+  }
+  .coluna-4-media{
+    flex-basis: $largura-coluna-12;
+    display: inline-block !important;
+  }
+  .coluna-5-media{
+    flex-basis: $largura-coluna-12;
+    display: inline-block !important;
+  }
+  .coluna-6-media{
+    flex-basis: $largura-coluna-12;
+    display: inline-block !important;
+  }
+  .coluna-8-media{
+    flex-basis: $largura-coluna-12;
+    display: inline-block !important;
+  }
+  .coluna-10-media{
+    flex-basis:$largura-coluna-12;
+  }
+  .coluna-12-media{
+    flex-basis:$largura-coluna-12;
+  }
+}
+
+.linha{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+}

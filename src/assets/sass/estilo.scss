@@ -1,0 +1,54 @@
+@import "abstract/variaveis";
+@import "base/animacoes";
+@import "base/base";
+@import "base/tipografia";
+
+@import "componentes/botoes";
+
+
+
+
+
+#side-bar{
+  order:-1;
+    background-color: lighten(black,15%);
+    display: inline-block;
+    min-height: 100vh;
+}
+.nav-top{
+  background-color:white;
+  height:$altura-nav-top;
+}
+
+.text-center{
+  text-align: center;
+}
+#menu-nav-top{
+    float:right;
+    list-style-type: none;    
+  li{
+    display: inline;
+  }
+}
+
+#menu-sidebar{
+  list-style: none;
+  li:hover{
+    background-color:$color-white;
+  }
+}
+#perfil{
+  background-color:$color-white;
+  margin:15px;
+  img{
+    max-height:200px;
+  }
+
+  #menu-perfil-usuario{
+    list-style:none;
+  }
+}
+#formularios{
+  margin:15px;
+  background-color:white;
+}
